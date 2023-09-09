@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-navbar{
+    width: 100%;
+    height: 7vh;
+    background-color: #a9a9a9;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-icons{
+    margin-left: 45px;
+}
+.top-icons i{
+    font-size: 22px;
+    color: #1c1c50;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.links{
+    margin-right: 45px
+}
+.links i{
+    font-size: 22px;
+    color: #1c1c50;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#btn-login{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-login a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-login:hover{
+    background-color: #1c1c50;
+}
+#btn-login a:hover{
+    color: white;
+}
+#btn-signup{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-signup a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-signup:hover{
+    background-color: #1c1c50;
+}
+#btn-signup a:hover{
+    color: white;
+}
+@media screen and(max-width:500px){
+    .top-icons{
+        margin-left: 30px;
+    }
+    .top-icons i{
+        font-size: 15px;
+    }
+    .links{
+        margin-left: 30px;
+    }
+    .links i{
+        font-size: 15px;
+    }
+    #btn-login{
+        width: 60px;
+        height: 5vh;
+    }
+    #btn-signup{
+        width: 60px;
+        height: 5vh;
+    }
+}
+@media screen and(max-width:350px){
+    .top-icons{
+        margin-left: 10px;
+    }
+    .top-icons i{
+        font-size: 10px;
+    }
+    .links{
+        margin-left: 10px;
+    }
+    .links i{
+        font-size: 10px;
+    }
+    #btn-login{
+        width: 30px;
+        height: 4vh;
+    }
+    #btn-signup{
+        width: 30px;
+        height: 4vh;
+    }
+    
+}
+.home-section{
+    width: 100%;
+    height: 93vh;
+    background-color: #a9a9a926;
+}
+#navbar{
+    background-color: #1c1c50;
+    font-size: 16px;
+}
+#navbar .nav-link{
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+#navbar .nav-link:hover{
+    color: white;
+    border-radius: 6px;
+}
+.dropdown li a{
+    color: white;
+}
+#search-btn{
+    color: white;
+    border: 1px solid white;
+}
+#search-btn:hover{
+    background-color: #1c1c50;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    font-family: 'Roboto Slab',sans-serif;
+}
+.home.img{
+    flex: 1 1 400px;
+    flex-grow: 1;
+}
+.home .img img{
+    width: 100%;
+    /* height: 574px; */
+    height: 77vh;
+}
+.home .content{
+    flex: 1 1 400px;
+    flex-grow: 1;
+    margin-left: 30px;
+}
+.content h3{
+    margin-left: 70px;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #1c1c50;
+    font-weight: bold;
+}
+.content h3 span{
+    font-size: 40px;
+}
+.content p{
+    margin-left: 70px;
+    color: #1c1c50;
+}
+.content #shopNow{
+    margin-left: 70px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #1c1c50;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.content #shopNow:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+
+
+
+#card{
+    margin-top: 30px;
+    font-family: 'Roboto Slab',serif;
+    border-radius: 10px;
+}
+#card .card img{
+    height: 60vh;
+}
+#card h5{
+    color: #1c1c50;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 35vh;
+}
+#card p{
+    text-align: center;
+    font-weight: bold;
+}
+#card button{
+    text-align: center;
+    margin-left: 100px;
+    width: 150px;
+    height: 33px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: transparent;
+    color: #1c1c50;
+    border: 2px solid #1c1c50;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#card button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    margin-top: 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+.banner .content{
+    text-align: center;
+    padding-top: 100px;
+}
+.banner .content h1{
+    color: white;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 2px black;
+    letter-spacing: 5px;
+}
+.banner .content p{
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 4px;
+}
+#bannerButton button{
+    width: 170px;
+    height: 40px;
+    margin-top: 10px;
+    background: transparent;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    color:white;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#bannerButton button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+
+
+
+
+
+#product{
+    font-family: 'Roboto Slab',sans-serif;
+    margin-top: 70px;
+   
+}
+#product h1{
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 2px gray;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+#product .card{
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+#product h3{
+    margin-top: 30px;
+    color: #1c1c50;
+    letter-spacing: 2px;
+    text-align: 1px 1px 1px black;
+}
+#product h5 span{
+    float: right;
+    color: #1c1c50;
+    cursor: pointer;
+}
+.checked{
+    color: gold;
+}
+#row2{
+    margin-top: 20px;
+}
+#cardButton{
+    display: flex;
+    margin-top: 50px;
+}
+#cardButton button{
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    margin: auto;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    border: 2px solid black;
+    transition: 0.5s ease;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#cardButton button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+
+
+
+
+#offer{
+    margin-top: 50px;
+}
+#offer i{
+    font-size: 40px;
+    color: #1c1c50;
+}
+
+
+
+
+#footer{
+    padding: 0 0 30px 0;
+    color: #1c1c50;
+    font-size: 14px;
+    background: #1c1c50;
+    font-family: 'Roboto Slab', serif;
+}
+#footer .footer-top{
+    padding: 60px 0 30px;
+    background: #1c1c50;
+    color: white;
+}
+#footer .footer-top .footer-content h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#footer .footer-top .footer-content h4{
+    font-size: 22px;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-content p{
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding-right: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child{
+    padding: 0;
+}
+#footer .footer-top .footer-links ul li a{
+    color: white;
+    line-height: 2;
+}
+#footer .footer-top .social-link a{
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    line-height: 1;
+    padding-right: 5px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s ease;
+}
+#footer .copyright{
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 18px;
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    color: white;
+    font-size:18px;
+}
+#footer hr{
+    color: white;
+}
+/* ......login page................. */
+.info{
+    color: white;
+    text-align: center;
+    margin-top: 18vh;
+}
+.info button{
+    width: 170px;
+    height: 40px;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    border: 2px solid white;
+    transition: 0.5s ease;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.info button a{
+    text-decoration: none;
+    color: #1c1c50;
+}
+.info button:hover{
+    background-color: #1c1c50;
+}
+.info button a:hover{
+    color: white;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main .logo{
+    margin-top: 10px;
+}
+#main .logo i{
+    margin: 5px;
+    font-size: 20px;
+}
+#loginbtn{
+    width: 160px;
+    height: 40px;
+    font-size: 22px;
+    background-color: #1c1c50;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    font-family: sans-serif;
+    border: 2px solid white;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* .................... */
+.signupbtn{
+    width: 160px;
+    height: 50px;
+    font-size: 22px;
+    background-color: #1c1c50;
+    color: white;
+    margin-left: 32vh;
+    margin-top: 20px;
+    font-family: sans-serif;
+    border: 2px solid white;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+    border-radius: 12px;
+    cursor: pointer;
+}
+h5 a{
+    margin-left: 16px;
+    text-decoration: none;
+}
+.signupIcons{
+    background-color: #1c1c50;
+    height: 7vh;
+    color: white;
+    font-size: 20px;
+    line-height: 7vh;
+    padding-left: 10px;
+}
+.signupIcons i{
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
